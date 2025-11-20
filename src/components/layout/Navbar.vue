@@ -32,10 +32,19 @@
             <span class="logo-text">SIHA</span>
           </RouterLink>
         </div>
-        <div class="navbar-menu">
-          <RouterLink to="/" class="nav-link">Home</RouterLink>
-          <RouterLink to="/privacy" class="nav-link">Privacy Policy</RouterLink>
-          <RouterLink to="/terms" class="nav-link">Terms & Conditions</RouterLink>
+
+        <button class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
+          <span :class="{ open: isMenuOpen }"></span>
+          <span :class="{ open: isMenuOpen }"></span>
+          <span :class="{ open: isMenuOpen }"></span>
+        </button>
+
+        <div class="navbar-menu" :class="{ open: isMenuOpen }">
+          <RouterLink to="/" class="nav-link" @click="closeMenu">Home</RouterLink>
+          <RouterLink to="/privacy" class="nav-link" @click="closeMenu">Privacy Policy</RouterLink>
+          <RouterLink to="/terms" class="nav-link" @click="closeMenu"
+            >Terms & Conditions</RouterLink
+          >
         </div>
       </div>
     </div>
@@ -43,7 +52,18 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { RouterLink } from "vue-router";
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
 </script>
 
 <style scoped>
@@ -86,6 +106,38 @@ import { RouterLink } from "vue-router";
   white-space: nowrap;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--primary-purple);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger span.open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger span.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span.open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .navbar-menu {
   display: flex;
   gap: 2rem;
@@ -120,14 +172,42 @@ import { RouterLink } from "vue-router";
 }
 
 @media (max-width: 768px) {
-  .navbar-content {
-    flex-direction: column;
-    gap: 1rem;
+  .hamburger {
+    display: flex;
   }
 
   .navbar-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .navbar-menu.open {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link.router-link-active::after {
+    display: none;
   }
 
   .logo-text {

@@ -20,8 +20,8 @@
         <div class="hero-image">
           <div class="lock-illustration">
             <svg
-              width="400"
-              height="400"
+              width="450"
+              height="450"
               viewBox="0 0 280 280"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
