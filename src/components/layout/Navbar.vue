@@ -4,10 +4,30 @@
       <div class="navbar-content">
         <div class="navbar-brand">
           <RouterLink to="/">
-            <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="14" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M10 14V10C10 6.68629 12.6863 4 16 4C19.3137 4 22 6.68629 22 10V14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="16" cy="21" r="2" fill="currentColor"/>
+            <svg
+              class="logo-icon"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="6"
+                y="14"
+                width="20"
+                height="14"
+                rx="2"
+                stroke="currentColor"
+                stroke-width="2.5"
+              />
+              <path
+                d="M10 14V10C10 6.68629 12.6863 4 16 4C19.3137 4 22 6.68629 22 10V14"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+              <circle cx="16" cy="21" r="2" fill="currentColor" />
             </svg>
             <span class="logo-text">Secure Information Handling Academy</span>
           </RouterLink>
@@ -90,7 +110,7 @@ import { RouterLink } from "vue-router";
 }
 
 .nav-link.router-link-active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 0;
@@ -104,12 +124,12 @@ import { RouterLink } from "vue-router";
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .navbar-menu {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .logo-text {
     font-size: 1rem;
   }

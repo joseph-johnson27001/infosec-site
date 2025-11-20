@@ -6,24 +6,24 @@
         <p class="header-subtitle">Last updated: November 20, 2025</p>
       </div>
     </div>
-    
+
     <div class="page-content">
       <div class="container">
         <div class="content-card">
           <section class="content-section">
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using the Secure Information Handling Academy platform, you accept and agree
-              to be bound by these Terms and Conditions. If you do not agree to these terms, please do not
-              use our services.
+              By accessing and using the Secure Information Handling Academy platform, you accept
+              and agree to be bound by these Terms and Conditions. If you do not agree to these
+              terms, please do not use our services.
             </p>
           </section>
 
           <section class="content-section">
             <h2>2. Certification Program</h2>
             <p>
-              Our certification program is designed for contractors and professionals who handle sensitive
-              information. The certification:
+              Our certification program is designed for contractors and professionals who handle
+              sensitive information. The certification:
             </p>
             <ul>
               <li>Requires completion of all course modules and assessments</li>
@@ -35,9 +35,7 @@
 
           <section class="content-section">
             <h2>3. User Obligations</h2>
-            <p>
-              As a user of our platform, you agree to:
-            </p>
+            <p>As a user of our platform, you agree to:</p>
             <ul>
               <li>Provide accurate and complete information during registration</li>
               <li>Maintain the confidentiality of your account credentials</li>
@@ -49,9 +47,7 @@
 
           <section class="content-section">
             <h2>4. Payment Terms</h2>
-            <p>
-              Certification fees are due at the time of enrollment. We offer:
-            </p>
+            <p>Certification fees are due at the time of enrollment. We offer:</p>
             <ul>
               <li>Monthly subscription plans for individual professionals</li>
               <li>Annual plans with discounted rates</li>
@@ -63,8 +59,8 @@
           <section class="content-section">
             <h2>5. Intellectual Property</h2>
             <p>
-              All course materials, content, and certification marks are the intellectual property of
-              Secure Information Handling Academy. You may not:
+              All course materials, content, and certification marks are the intellectual property
+              of Secure Information Handling Academy. You may not:
             </p>
             <ul>
               <li>Copy, reproduce, or distribute course materials</li>
@@ -77,8 +73,8 @@
           <section class="content-section">
             <h2>6. Certification Validity and Renewal</h2>
             <p>
-              Certifications are valid for a specified period (typically 2 years) and require renewal
-              to maintain validity. Renewal may require:
+              Certifications are valid for a specified period (typically 2 years) and require
+              renewal to maintain validity. Renewal may require:
             </p>
             <ul>
               <li>Completion of continuing education requirements</li>
@@ -104,9 +100,7 @@
 
           <section class="content-section">
             <h2>8. Termination</h2>
-            <p>
-              We reserve the right to suspend or terminate your access to our platform if you:
-            </p>
+            <p>We reserve the right to suspend or terminate your access to our platform if you:</p>
             <ul>
               <li>Violate these Terms and Conditions</li>
               <li>Engage in fraudulent or dishonest conduct</li>
@@ -126,12 +120,10 @@
 
           <section class="content-section">
             <h2>10. Contact Information</h2>
-            <p>
-              If you have questions about these Terms and Conditions, please contact us:
-            </p>
+            <p>If you have questions about these Terms and Conditions, please contact us:</p>
             <p class="contact-info">
-              Email: legal@sihacademy.com<br>
-              Address: [Your Business Address]<br>
+              Email: legal@sihacademy.com<br />
+              Address: [Your Business Address]<br />
               Phone: [Your Phone Number]
             </p>
           </section>
@@ -212,7 +204,7 @@
 }
 
 .content-section li::before {
-  content: '•';
+  content: "•";
   color: var(--primary-purple);
   font-weight: bold;
   font-size: 1.5rem;
@@ -231,11 +223,11 @@
   .page-header h1 {
     font-size: 2rem;
   }
-  
+
   .content-card {
     padding: 2rem 1.5rem;
   }
-  
+
   .content-section h2 {
     font-size: 1.5rem;
   }

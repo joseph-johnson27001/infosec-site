@@ -6,24 +6,22 @@
         <p class="header-subtitle">Last updated: November 20, 2025</p>
       </div>
     </div>
-    
+
     <div class="page-content">
       <div class="container">
         <div class="content-card">
           <section class="content-section">
             <h2>1. Introduction</h2>
             <p>
-              At Secure Information Handling Academy, we are committed to protecting your privacy and ensuring
-              the security of your personal information. This Privacy Policy explains how we collect, use, and
-              safeguard your data when you use our certification platform.
+              At Secure Information Handling Academy, we are committed to protecting your privacy
+              and ensuring the security of your personal information. This Privacy Policy explains
+              how we collect, use, and safeguard your data when you use our certification platform.
             </p>
           </section>
 
           <section class="content-section">
             <h2>2. Information We Collect</h2>
-            <p>
-              We collect information that you provide directly to us, including:
-            </p>
+            <p>We collect information that you provide directly to us, including:</p>
             <ul>
               <li>Name and contact information</li>
               <li>Professional credentials and qualifications</li>
@@ -35,9 +33,7 @@
 
           <section class="content-section">
             <h2>3. How We Use Your Information</h2>
-            <p>
-              We use the information we collect to:
-            </p>
+            <p>We use the information we collect to:</p>
             <ul>
               <li>Provide and maintain our certification services</li>
               <li>Process your enrollment and payments</li>
@@ -51,18 +47,18 @@
           <section class="content-section">
             <h2>4. Data Security</h2>
             <p>
-              We implement industry-standard security measures to protect your personal information from
-              unauthorized access, disclosure, or misuse. All data is encrypted in transit and at rest,
-              and we regularly audit our security practices to ensure compliance with information security
-              best practices.
+              We implement industry-standard security measures to protect your personal information
+              from unauthorized access, disclosure, or misuse. All data is encrypted in transit and
+              at rest, and we regularly audit our security practices to ensure compliance with
+              information security best practices.
             </p>
           </section>
 
           <section class="content-section">
             <h2>5. Information Sharing</h2>
             <p>
-              We do not sell, trade, or rent your personal information to third parties. We may share your
-              information only in the following circumstances:
+              We do not sell, trade, or rent your personal information to third parties. We may
+              share your information only in the following circumstances:
             </p>
             <ul>
               <li>With certification verification services (with your consent)</li>
@@ -74,9 +70,7 @@
 
           <section class="content-section">
             <h2>6. Your Rights</h2>
-            <p>
-              You have the right to:
-            </p>
+            <p>You have the right to:</p>
             <ul>
               <li>Access and review your personal information</li>
               <li>Request corrections to inaccurate data</li>
@@ -93,7 +87,7 @@
               please contact us at:
             </p>
             <p class="contact-info">
-              Email: privacy@sihacademy.com<br>
+              Email: privacy@sihacademy.com<br />
               Address: [Your Business Address]
             </p>
           </section>
@@ -174,7 +168,7 @@
 }
 
 .content-section li::before {
-  content: '•';
+  content: "•";
   color: var(--primary-purple);
   font-weight: bold;
   font-size: 1.5rem;
@@ -193,11 +187,11 @@
   .page-header h1 {
     font-size: 2rem;
   }
-  
+
   .content-card {
     padding: 2rem 1.5rem;
   }
-  
+
   .content-section h2 {
     font-size: 1.5rem;
   }
