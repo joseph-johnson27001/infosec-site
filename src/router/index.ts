@@ -20,6 +20,10 @@ const router = createRouter({
       component: () => import("../views/TermsPage.vue"),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top on route change
+    return { top: 0, behavior: "instant" };
+  },
 });
 
 export default router;
