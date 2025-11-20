@@ -29,7 +29,7 @@
               />
               <circle cx="16" cy="21" r="2" fill="currentColor" />
             </svg>
-            <span class="logo-text">Secure Information Handling Academy</span>
+            <span class="logo-text">SIHA</span>
           </RouterLink>
         </div>
         <div class="navbar-menu">
